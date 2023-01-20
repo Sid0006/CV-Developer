@@ -15,3 +15,12 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+ window.addEventListener("load", () => {
+   document.querySelector(".logo").classList.remove("logo-active");
+   document.querySelector(".loader_0").classList.remove("loader-active");
+   document.querySelector(".loader_1").classList.remove("loader-active");
+   document.querySelector(".loader_2").classList.remove("loader-active");
+   document.querySelector(".loader_3").classList.remove("loader-active");
+   document.querySelector(".loader_4").classList.remove("loader-active");
+ });

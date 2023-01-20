@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .logo-active{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            
+            align-content: center;
+            z-index: 99;
+            
+        }
+
+        .loader_0 {
+            display: none;
+            position: absolute;
+            top: 360px;
+            left: 40%;
+            width: 70px;
+            height: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            transform: rotate(-45deg);
+            z-index: 100;
+        }
+
+        .loader_0:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 60%;
+            background-color: white;
+            box-shadow: 10px 0px 15px 0px white;
+            animation: load 1s infinite;
+        }
+
+        .loader_1 {
+            position: absolute;
+            top: 407px;
+            left: 611px;
+            width: 70px;
+            height: 10px;
+            display: none;
+            border-radius: 10px;
+            transform: rotate(45deg);
+            z-index: 100;
+        }
+
+        .loader_1:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 60%;
+            background-color: white;
+            box-shadow: 10px 0px 15px 0px white;
+            animation: load 1s infinite;
+        }
+
+        .loader_2 {
+            position: absolute;
+            top: 380px;
+            left: 650px;
+            display: none;
+            width: 170px;
+            height: 10px;
+            border-radius: 10px;
+            transform: rotate(110deg);
+            z-index: 100;
+        }
+
+        .loader_2:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 60%;
+            background-color: white;
+            box-shadow: 10px 0px 15px 0px white;
+            animation: load 1s infinite;
+        }
+
+        .loader_3 {
+            position: absolute;
+            top: 405px;
+            left: 794px;
+            width: 70px;
+            height: 10px;
+            display: none;
+            border-radius: 10px;
+            transform: rotate(140deg);
+            z-index: 100;
+        }
+
+        .loader_3:before {
+            content: "";
+
+            position: absolute;
+            width: 0;
+            height: 60%;
+            background-color: white;
+            box-shadow: 10px 0px 15px 0px white;
+            animation: load 1s infinite;
+        }
+
+        .loader_4 {
+            position: absolute;
+            display: none;
+            top: 360px;
+            left: 800px;
+            width: 70px;
+            height: 10px;
+            border-radius: 10px;
+            transform: rotate(-130deg);
+            z-index: 100;
+        }
+
+        .loader_4:before {
+            content: "";
+
+            position: absolute;
+            width: 0;
+            height: 60%;
+            background-color: white;
+            box-shadow: 10px 0px 15px 0px white;
+            animation: load 1s infinite;
+        }
+
+        .loader-active {
+            display: block;
+        }
+
+
+
+        @keyframes load {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+        p{
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="logo logo-active"> 
+        <div class="loader_0 loader-active"></div>
+        <div class="loader_1 loader-active"></div>
+        <div class="loader_2 loader-active"> </div>
+        <div class="loader_3 loader-active"></div>
+        <div class="loader_4 loader-active"></div>
+    </div>
+    <p>hel
+
+    </p>
+    
+
+    <script src="index.js"></script>
+</body>
+
+</html>
