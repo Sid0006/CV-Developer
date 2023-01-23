@@ -24,3 +24,5 @@ window.addEventListener("scroll", reveal);
    document.querySelector(".loader_3").classList.remove("loader-active");
    document.querySelector(".loader_4").classList.remove("loader-active");
  });
+
+ 
